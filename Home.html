@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)file:///C:/Users/bob/Downloads/html%20stuff%20(1).html -->
+<html><head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+     <title>Wolmer’s Page</title>  
+       <link rel="stylesheet" href="stylesg.css">
+    </head>
+    <body>
+<header>
+    <img src="WolmersLogo.png" class="image">
+    <a href="#" class="logo">Wolmer’s Boys'</a>
+    <a href="#" class="logo2">Age Quad Agis</a>
+    <div class="toggle">
+
+    </div>
+    <nav>
+        <ul>
+
+           <li><a href="Hoe.html">Home</a></li>
+           <li><a href="Clus.html">Clubs</a></li>
+           <li><a href="youclub_student.html">Your Clubs</a></li>
+           <li><a href="idex.html">Log out</a></li>
+         </ul>
+    </nav>
+</header>
+
+       <script>
+window.addEventListener("scroll",function(){
+    const header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 0);
+});
+const navigation = document.querySelector('nav')
+document.querySelector('.toggle').onclick = function(){
+    this.classList.toggle('active');
+    navigation.classList.toggle('active');
+}
+       </script>
+      
+
+
+

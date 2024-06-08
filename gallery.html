@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)file:///C:/Users/bob/Downloads/html%20stuff%20(1).html -->
+<html><head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+     <title>Glamaton</title>  
+     <meta name="description" content="Cayman-based Jamaican artiste Glamaton is all about spreading positivity and uplifting the youth through his lyrical tallent to create a more peaceful world for all to live in." /> 
+
+
+     <link rel="icon" type="image/x-icon" href="glamicon.png">
+
+       <link rel="stylesheet" href="gallery.css">
+
+       <script src="https://kit.fontawesome.com/7a2764d778.js" crossorigin="anonymous">
+       </script>
+    </head>
+    
+<header>
+
+    
+    <div class="toggle"></div>
+        <a href="index.html" class="logo">GLAMATON</a>
+    <nav>
+        <ul>
+
+           <li><a href="index.html">HOME</a></li>
+           <li><a href="music.html">MUSIC</a></li>
+           <li><a href="shows.html">SHOWS</a></li>
+           <li><a href="gallery.html">GALLERY</a></li>
+           <li><a href="bio.html">BIO</a></li>
+           <li><a href="press.html">PRESS KIT</a></li>
+           
+         </ul>
+    </nav>
+</div>
+</header>
+<body onload="getPics()"></body>
+<div class="container">
+<img src="enlarge_bio_kid.jpeg" class="gallery2"> 
+<img src="gal.png" class="gallery">
+<div class="blur"></div>
+<h1 class="center">Gallery</h1>
+</div>
+<section2>
+    <h2>Gallery</h2>
+    <hr>
+</section2>
+<container2>
+    <img src="a1.jpg">
+    <img src="a2.jpg">
+    <img src="a3.jpg">
+    <img src="a4.jpg">
+    <img src="a5.jpg">
+    <img src="a6.jpg">
+    <img src="a7.jpg">
+    <img src="a8.jpg">
+    <img src="a9.jpg">
+    <img src="a10.jpg">
+    <img src="a11.jpg">
+    <img src="a12.jpg">
+    <img src="a13.jpg">
+    <img src="a14.jpg">
+    <img src="a15.jpg">
+
+</container2>
+<div id="fullpage" onclick="this.style.display='none';"></div>
+</body>
+<script>
+    const navigation = document.querySelector('nav')
+document.querySelector('.toggle').onclick = function(){
+    this.classList.toggle('active');
+    navigation.classList.toggle('active');
+}
+function getPics() {}
+const imgs = document.querySelectorAll('container2 img');
+const fullPage = document.querySelector('#fullpage');
+
+imgs.forEach(img => {
+  img.addEventListener('click', function() {
+    fullPage.style.backgroundImage = 'url(' + img.src + ')';
+    fullPage.style.display = 'block';
+  });
+});
+window.addEventListener("scroll",function(){
+    const header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 0);
+});
+           </script>
+<footer>
+    <p><b style="font-size: 1.5em;">Glamaton's Mission</b> 
+
+        <br><br>
+        We are dedicated to delivering music with profound meaning and unwavering passion. Our aim is to transform the music landscape, shifting away from the prevailing negativity and ushering in a new era of positivity and vibrant vibes. Join us as we spread the joy of music that uplifts the soul and inspires positive change. 
+
+        <br><br>
+        #PositiveVibes #GlamatonMusic
+   </p>
+   <div class="social3"> 
+   <a href="https://instagram.com/glamaton?igshid=MzRlODBiNWFlZA=="target="_blank"><i class="fa-brands fa-instagram"></i></a>
+   <a href="https://youtube.com/@Glamaton"target="_blank"><i class="fa-brands fa-youtube"></i>
+    <a href="https://m.facebook.com/GlamatonArtist" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+    </div>
+    <p><b style="font-size: 1.5em;">Contact</b>
+        <br><br>
+        +1 (345) 547-2041 <br> +1 (345) 517-2081
+        <br><br>
+        Email: <b>Glamaton73@gmail.com</b> </p>
+  </footer>

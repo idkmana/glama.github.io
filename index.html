@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)file:///C:/Users/bob/Downloads/html%20stuff%20(1).html -->
+<html>
+    <head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+     <title>Glamaton</title> 
+     <meta name="description" content="Cayman-based Jamaican artiste Glamaton is all about spreading positivity and uplifting the youth through his lyrical tallent to create a more peaceful world for all to live in." /> 
+       <link rel="stylesheet" href="stylesg.css">
+
+       <link rel="icon" type="image/x-icon" href="glamicon.png">
+
+       <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap' rel='stylesheet'>
+
+       <script src="https://kit.fontawesome.com/7a2764d778.js" crossorigin="anonymous"></script>
+
+    </head>
+    
+<header>
+<a href="index.html" class="logo">GLAMATON</a>
+    
+    <div class="toggle"></div>
+        
+    <nav>
+        <ul>
+
+           <li><a href="index.html">HOME</a></li>
+           <li><a href="music.html">MUSIC</a></li>
+           <li><a href="shows.html">SHOWS</a></li>
+           <li><a href="gallery.html">GALLERY</a></li>
+           <li><a href="bio.html">BIO</a></li>
+           <li><a href="press.html">PRESS KIT</a></li>
+           
+         </ul>
+    </nav>
+</div>
+</header>
+
+       <script>
+window.addEventListener("scroll",function(){
+    const header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 0);
+});
+window.addEventListener("scroll",function(){
+    const uptop = document.querySelector('.uptop');
+    uptop.classList.toggle('visable', window.scrollY > 500);
+});
+const navigation = document.querySelector('nav')
+document.querySelector('.toggle').onclick = function(){
+    this.classList.toggle('active');
+    navigation.classList.toggle('active');
+}
+
+       </script>
+
+       <body>
+       <div class="container" id="id2">
+        <img src="glamer.png" width="100%" height="100%">
+        <div class="centered1"></div>
+        <div class="centered"><i>Out March 12, 2023</i></div>
+        <div class="centered2"><mark> WOMAN</mark><br>
+            <mark> PLAN</mark></div>
+        <div class="centered3"><a href="#id1"><button>LISTEN NOW</button></a></div>
+        <div class="social">
+            <a href="https://instagram.com/glamaton?igshid=MzRlODBiNWFlZA==" target="_blank">
+            <button>
+            <i class="fa-brands fa-instagram"></i>
+        </button></a>
+        <a href="https://youtube.com/@Glamaton"target="_blank"><button>
+        <i class="fa-brands fa-youtube"></i>
+        </button></a>
+        <a href="https://open.spotify.com/artist/0SWnzhk3RB1WtUBHizC8dR"target="_blank"><button>
+            <i class="fa-brands fa-spotify"></i>
+            </button></a>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="blur"></div>
+        <div class="centered">New Single!</div>
+        <div class="centeredd">WOMAN PLAN</div>
+        <div class="centered23"><a href="https://youtu.be/JSLFQvhY7aE"><img src="thumb.jpeg"></a></div>
+    </div>
+       <section> 
+        <h1>WOMAN PLAN</h1>
+        <p><b>"Woman Plan"</b> by Glamaton is an empowering anthem that celebrates the ambition and independence of women. With a catchy melody and lyrics that inspire women to dream big and pursue financial success, this song serves as a motivational soundtrack for anyone striving to achieve their goals. 
+        <br><br>
+        
+        Released in <b>2023</b>, Glamaton states <i>“too many women nowadays go with the flow of life. they want to just ease off in life and let the wind steer the boat. that's why woman plan now, preaching to the ladies that they should have an idea of what to do, where to go, and how to make sumn substantial with their lives, they should be looking forward to making their next million. so all I want is for them to listen to this song, and get motivated to either start working on something or continue building what they have in the works”</i>
+       </p>
+       <a href="music.html"><button >MORE MUSIC!</button></a>
+      </section>
+      <section3 >
+        </section3>
+ <div class="container2" id="id1">
+      <div class="music">
+    <img src="woman plan.jpg" class="song" >
+    <h2 >Woman Plan</h2>
+    <p2>Glamaton</p2>
+    <audio id="song">
+         <source src="Woma.mp3" type="audio/mpeg">
+     </audio>
+        <input type="range" value="0" id="progress">
+         <div class="controls">
+                        <div onclick="playPause()">
+                            <i class="fa-solid fa-play" id="ctrl"></i>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            
+             <script>
+            let progress = document.getElementById("progress");
+            let song = document.getElementById("song");
+            let ctrl = document.getElementById("ctrl");
+
+            song.onloadedmetadata = function(){
+                progress.max = song.duration;
+                progress.value = song.currentTime;
+            }
+
+            function playPause(){
+                if(ctrl.classList.contains("fa-pause")){
+                    song.pause();
+                    ctrl.classList.remove("fa-pause");
+                    ctrl.classList.add("fa-play");
+                }
+                else{
+                    song.play();
+                    ctrl.classList.add("fa-pause");
+                    ctrl.classList.remove("fa-play");
+                }
+            }
+
+            if(song.play()){
+                setInterval(() => {
+                    progress.value = song.currentTime
+                }, 500);
+            }
+
+            progress.onchange = function(){
+                song.play();
+                song.currentTime = progress.value;
+                ctrl.classList.add("fa-pause");
+            ctrl.classList.remove("fa-play");
+            }
+             </script>
+             
+      <section2>
+      <h2>LATEST NEWS</h2>
+      <hr>
+      <h3>Glamaton Happy with Single</h3>
+      <p1>April 19, 2016</p1>
+      <img src="Glamaton20160316C.jpg">
+        <p>Cayman-based dancehall artiste Glamaton is in an upbeat mood as his single titled Jamaican Slang on the J Keys Records label continues to grow in popularity.
+            <br><br>
+            The song, which is the title track from his debut album, was released in February, and since then it has enjoyed steady rotation on several top local radio stations, including HITZ 92 FM and IRIE FM.
+            <br><br>
+            <i style="font-weight: 600;">"I feel very good about the response that my song is getting. It's receiving strong support from DJs in Jamaica, Grand Cayman, the US and Europe. I'm also getting positive comments about it from my fans on Facebook," said the artiste.</i>
+            </p>
+            <br>
+         <a href="http://jamaica-star.com/article/entertainment/20160429/glamaton-happy-single"><p style="color: cadetblue;">http://jamaica-star.com/article/entertainment/20160429/glamaton-happy-single</p></a>
+            
+       
+    </section2>
+    <hr>
+    <section2>
+        <h3>Glamaton Happy With The Return Of Sting</h3>
+        <p1>January 6, 2023</p1>
+        <img src="GLAMATON-PIC.jpg">
+          <p>Cayman-based Jamaican dancehall artiste Glamaton is in an upbeat mood after performing at the prestigious Sting concert at Grizzly’s Plantation Cove in St. Ann on December 26.
+            <br><br>
+
+            Clad in full black the deejay took center stage at 10:30 pm and delivered an impressive performance that included songs such as ‘Jamaican Slang’, ‘Nuh Badmind’, ‘Di Song’, ‘Negativity’, and ‘Good Memories’.
+            <br><br>
+
+            <i style="font-weight: 600;">“This was my fifth appearance on Sting, and I am very pleased with the response I received from the crowd. I delivered a very energetic performance which was well received. All my previous appearances on Sting went well but this one was very special. Based on the response I received from the crowd I could tell that I really made a strong impact this time around,” he said.</i>
+         </p>
+         <br>
+         <a href="https://reggaenorthca.com/glamaton-happy-with-the-return-of-sting/"><p style="color: cadetblue;">https://reggaenorthca.com/glamaton-happy-with-the-return-of-sting/</p></a>
+      </section2>
+      <hr>
+      <section2>
+        <h3>Glamaton attacks destructive social media in ‘Negativity’</h3>
+        <p1>December 4,2021</p1>
+        <img src="glamaton-1024x634.jpg">
+          <p>In his latest single, Negativity, Cayman-based dancehall artiste Glamaton urges people to be more mindful of the content they share on social media. The outspoken deejay said the constant sharing of negative content online is having a deleterious impact on the minds of people across the globe.
+            <br><br>
+            <i style="font-weight: 600;">“A lot of people go on social media every day just to spread false news and gossip,” he said while speaking about the inspiration behind the song.
+            <br><br>
+            “There are also many cyber bullies online trolling and body-shaming people. Scientific research has proven that the rise of social media has caused the rate of depression and suicides to increase worldwide. This is very sad. People need to use social media more wisely.” </i>
+         </p>
+         <br>
+         <a href="https://our.today/glamaton-attacks-destructive-social-media-in-negativity/"><p style="color: cadetblue;">https://our.today/glamaton-attacks-destructive-social-media-in-negativity/</p></a>
+      </section2>
+      <a href="#id2"><button class="uptop"><i class="fa-solid fa-chevron-up fa-2xl"></i>
+      </button></a>
+      </body>
+
+      <footer>
+        <p><b style="font-size: 1.5em;">Glamaton's Mission</b> 
+
+            <br><br>
+            We are dedicated to delivering music with profound meaning and unwavering passion. Our aim is to transform the music landscape, shifting away from the prevailing negativity and ushering in a new era of positivity and vibrant vibes. Join us as we spread the joy of music that uplifts the soul and inspires positive change. 
+
+            <br><br>
+            #PositiveVibes #GlamatonMusic
+       </p>
+       <div class="social3"> 
+       <a href="https://instagram.com/glamaton?igshid=MzRlODBiNWFlZA=="target="_blank"><i class="fa-brands fa-instagram"></i></a>
+       <a href="https://youtube.com/@Glamaton"target="_blank"><i class="fa-brands fa-youtube"></i>
+        <a href="https://m.facebook.com/GlamatonArtist" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+        </div>
+        <p><b style="font-size: 1.5em;">Contact</b>
+            <br><br>
+            +1 (345) 547-2041 <br> +1 (345) 517-2081
+            <br><br>
+            Email: <b>Glamaton73@gmail.com</b> </p>
+      </footer>
