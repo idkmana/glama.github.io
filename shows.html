@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)file:///C:/Users/bob/Downloads/html%20stuff%20(1).html -->
+<html><head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+     <title>Glamaton</title>  
+     <meta name="description" content="View upcoming shows and appearances by the one and only Glamaton." /> 
+
+       <link rel="stylesheet" href="showsstyle.css">
+
+       <link rel="icon" type="image/x-icon" href="glamicon.png">
+
+       <script src="https://kit.fontawesome.com/7a2764d778.js" crossorigin="anonymous">
+       </script>
+    </head>
+    
+<header class="sticky">
+
+    
+    <div class="toggle"></div>
+        <a href="index.html" class="logo">GLAMATON</a>
+    <nav>
+        <ul>
+
+           <li><a href="index.html">HOME</a></li>
+           <li><a href="music.html">MUSIC</a></li>
+           <li><a href="shows.html">SHOWS</a></li>
+           <li><a href="gallery.html">GALLERY</a></li>
+           <li><a href="bio.html">BIO</a></li>
+           <li><a href="press.html">PRESS KIT</a></li>
+           
+         </ul>
+    </nav>
+</div>
+</header>
+<script>
+    const navigation = document.querySelector('nav')
+    document.querySelector('.toggle').onclick = function(){
+        this.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+           </script>
+<body onload="getPics()">
+    <main>
+<section2>
+    <h1>Shows</h1>
+    <hr>
+</container>
+</section2>
+<section3>
+    <h4>N/A</h4>
+    <h5>N/A</h5>
+    <h6>N/A</h6>
+    <hr>
+    <h4>N/A</h4>
+    <h5>N/A</h5>
+    <h6>N/A</h6>
+    <hr>
+    <h4>N/A</h4>
+    <h5>N/A</h5>
+    <h6>N/A</h6>
+</section3>
+
+        <table>
+            <tr>
+             <th>Date</th> 
+             <th>Event</th> 
+             <th>Location</th>   
+            </tr>
+        <tr>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+        </tr>
+        </table>
+    </main>
+
+<section2>
+    <h2>Flyers</h2>
+    <hr>
+</container>
+<container>
+        <img src="kirk1.png">
+        <img src="kirk2.png">
+        <img src="kirk3.png">
+        <img src="kirk4.png">
+        <img src="kirk6.jpg">
+        <img src="kirk7.jpg">
+        <img src="kirk8.JPG">
+        <img src="kirk9.jpg">
+    </container>
+    <div id="fullpage" onclick="this.style.display='none';"></div>
+</body>
+    <script>
+    function getPics() {}
+        const imgs = document.querySelectorAll('container img');
+        const fullPage = document.querySelector('#fullpage');
+        
+        imgs.forEach(img => {
+          img.addEventListener('click', function() {
+            fullPage.style.backgroundImage = 'url(' + img.src + ')';
+            fullPage.style.display = 'block';
+          });
+        });
+        </script>
+<footer>
+    <p><b style="font-size: 1.5em;">Glamaton's Mission</b> 
+
+        <br><br>
+        We are dedicated to delivering music with profound meaning and unwavering passion. Our aim is to transform the music landscape, shifting away from the prevailing negativity and ushering in a new era of positivity and vibrant vibes. Join us as we spread the joy of music that uplifts the soul and inspires positive change. 
+
+        <br><br>
+        #PositiveVibes #GlamatonMusic
+   </p>
+   <div class="social3"> 
+   <a href="https://instagram.com/glamaton?igshid=MzRlODBiNWFlZA=="target="_blank"><i class="fa-brands fa-instagram"></i></a>
+   <a href="https://youtube.com/@Glamaton"target="_blank"><i class="fa-brands fa-youtube"></i>
+    <a href="https://m.facebook.com/GlamatonArtist" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+    </div>
+    <p><b style="font-size: 1.5em;">Contact</b>
+        <br><br>
+        +1 (345) 547-2041 <br> +1 (345) 517-2081
+        <br><br>
+        Email: <b>Glamaton73@gmail.com</b> </p>
+  </footer>
