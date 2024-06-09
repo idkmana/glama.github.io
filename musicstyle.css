@@ -162,7 +162,6 @@ h1{
     position: relative;
     width: 100%;
    height: 100%;
-   background-size: 100%;
   }
   .p1{
     background-image:url(thumb.jpeg);
@@ -189,13 +188,15 @@ h1{
    height: 100%;
    background-size: 100%;
   }
-  .p4 {
+  .p4
+   {
     background-image:url(nuh.jpg);
     filter: blur(5px);
     position: relative;
     width: 100%;
    height: 100%;
    background-size: 100%;
+   
   }
   .blur{
     width: 100%;
@@ -800,12 +801,6 @@ header .logo
         padding: 10px;
         width: 100%;
       }
-      .blur{
-        width: 100%;
-        height: 100%;
-        position: static;
-        background-color: #0000009d;
-      }
       main{
         display: flex;
         flex-wrap: wrap;
@@ -849,25 +844,29 @@ header .logo
 }
 @media (max-width: 540px)
 {
-    .containerstart {
-        position: relative;
-        width: 100%;
-       height: 100%;
-       background-size: 210%;
+      .p1{
+        background-image:url(thumb.jpeg);
+        background-size: 210%;
        background-repeat: no-repeat;
        background-position: center center;
       }
-      .p1{
-        background-image:url(thumb.jpeg);
-      }
       .p2{
         background-image:url(slang.jpg);
+        background-size: 210%;
+       background-repeat: no-repeat;
+       background-position: center center;
       }
       .p3 {
         background-image:url(neg.jpg);
+        background-size: 210%;
+       background-repeat: no-repeat;
+       background-position: center center;
       }
       .p4 {
         background-image:url(nuh.jpg);
+        background-size: 210%;
+       background-repeat: no-repeat;
+       background-position: center center;
       }
     .containerstart .centered {
         position: absolute;
