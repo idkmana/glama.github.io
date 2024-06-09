@@ -166,15 +166,23 @@ h1{
   }
   .p1{
     background-image:url(thumb.jpeg);
+    filter: blur(2px);
   }
   .p2{
     background-image:url(slang.jpg);
+    filter: blur(2px);
   }
   .p3 {
     background-image:url(neg.jpg);
+    filter: blur(2px);
+    position: relative;
+    width: 100%;
+   height: 100%;
+   background-size: 100%;
   }
   .p4 {
     background-image:url(nuh.jpg);
+    filter: blur(2px);
   }
   .containerstart .centered {
     position: absolute;
@@ -210,14 +218,6 @@ h1{
     object-fit: cover;
     width: 0;
   }
-  .blur{
-    width: 100%;
-    height: 100%;
-    position: static;
-    backdrop-filter: blur(5px);
-    background-color: rgba(0, 0, 0, 0.514);
-  }
-
   .containerr{
     width: 100%;
     margin: 0 auto;
@@ -876,13 +876,6 @@ header .logo
     object-fit: cover;
     width: 0;
   }
-      .blur{
-        width: 100%;
-        height: 100%;
-        position: static;
-        backdrop-filter: blur(5px);
-      }
-
       .containerr{
         width: 100%;
         margin: 0 auto;
