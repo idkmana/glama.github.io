@@ -337,14 +337,12 @@
             right: 0;
             width: 100%;
             height: calc(100%);
-            background-color: #00000048;
-            backdrop-filter: blur(20px);
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             transition: ease-in-out 0.5s;
-            z-index: 2;
+            z-index: 5;
             font-weight: 700;
             letter-spacing: 2px;
             opacity: 1;
@@ -356,8 +354,6 @@
             right: 0;
             width: 100%;
             height: calc(100%);
-            background-color: #00000048;
-            backdrop-filter: blur(20px);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -374,14 +370,12 @@
             right: 0;
             width: 100%;
             height: calc(100%);
-            background-color: #00000048;
-            backdrop-filter: blur(20px);
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             transition: ease-in-out 0.5s;
-            z-index: 2;
+            z-index: 5;
             font-weight: 700;
             letter-spacing: 2px;
             opacity: 1;
@@ -395,14 +389,13 @@
             right: 0;
             width: 100%;
             height: calc(100%);
-            background-color: #00000048;
-            backdrop-filter: blur(20px);
+            background-color: #000000d3;
             align-items: center;
             flex-direction: column;
-              transition: ease-in-out 0.5s;
-              opacity: 0;
+            transition: ease-in-out 0.5s;
+            opacity: 0;
             visibility:hidden;
-          }  
+          } 
         nav.active ul li a
         {
           color: #ffffff;

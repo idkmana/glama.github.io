@@ -643,8 +643,6 @@ z-index: 6;
   right: 0;
   width: 100%;
   height: calc(100%);
-  background-color: #00000048;
-  backdrop-filter: blur(20px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -662,8 +660,6 @@ header.sticky nav ul{
   right: 0;
   width: 100%;
   height: calc(100%);
-  background-color: #00000048;
-  backdrop-filter: blur(20px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -680,8 +676,6 @@ header nav.active ul
   right: 0;
   width: 100%;
   height: calc(100%);
-  background-color: #00000048;
-  backdrop-filter: blur(20px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -701,12 +695,11 @@ header nav ul{
   right: 0;
   width: 100%;
   height: calc(100%);
-  background-color: #00000048;
-  backdrop-filter: blur(20px);
+  background-color: #000000d3;
   align-items: center;
   flex-direction: column;
-    transition: ease-in-out 0.5s;
-    opacity: 0;
+  transition: ease-in-out 0.5s;
+  opacity: 0;
   visibility:hidden;
 }  
 nav.active ul li a
