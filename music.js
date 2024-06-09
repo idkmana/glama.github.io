@@ -14,13 +14,13 @@ document.addEventListener("DOMContentLoaded", function() {
     // Array to store all progress elements
     const progresses = [
         document.getElementById("progress"),
-        document.getElementById("progress2"), // Remove the space in "progress 2"
-        document.getElementById("progress3"), // Remove the space in "progress 3"
-        document.getElementById("progress4"), // Remove the space in "progress 4"
-        document.getElementById("progress5"), // Remove the space in "progress 5"
-        document.getElementById("progress6"), // Remove the space in "progress 6"
-        document.getElementById("progress7"), // Remove the space in "progress 7"
-        document.getElementById("progress8"), // Remove the space in "progress 8"
+        document.getElementById("progress 2"), // Remove the space in "progress 2"
+        document.getElementById("progress 3"), // Remove the space in "progress 3"
+        document.getElementById("progress 4"), // Remove the space in "progress 4"
+        document.getElementById("progress 5"), // Remove the space in "progress 5"
+        document.getElementById("progress 6"), // Remove the space in "progress 6"
+        document.getElementById("progress 7"), // Remove the space in "progress 7"
+        document.getElementById("progress 8"), // Remove the space in "progress 8"
     ];
 
     // Array to store all control elements
