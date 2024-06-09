@@ -166,15 +166,24 @@ h1{
   }
   .p1{
     background-image:url(thumb.jpeg);
-    filter: blur(2px);
+    filter: blur(5px);
+    position: relative;
+    width: 100%;
+   height: 100%;
+   background-size: 100%;
+
   }
   .p2{
     background-image:url(slang.jpg);
-    filter: blur(2px);
+    filter: blur(5px);
+    position: relative;
+    width: 100%;
+   height: 100%;
+   background-size: 100%;
   }
   .p3 {
     background-image:url(neg.jpg);
-    filter: blur(2px);
+    filter: blur(5px);
     position: relative;
     width: 100%;
    height: 100%;
@@ -182,8 +191,20 @@ h1{
   }
   .p4 {
     background-image:url(nuh.jpg);
-    filter: blur(2px);
+    filter: blur(5px);
+    position: relative;
+    width: 100%;
+   height: 100%;
+   background-size: 100%;
   }
+  .blur{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #00000085;
+    top: 0;
+  }
+
   .containerstart .centered {
     position: absolute;
     top: 40%;
@@ -778,6 +799,12 @@ header .logo
         color: #ffffff;
         padding: 10px;
         width: 100%;
+      }
+      .blur{
+        width: 100%;
+        height: 100%;
+        position: static;
+        background-color: #0000009d;
       }
       main{
         display: flex;
