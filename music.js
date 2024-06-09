@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Array to store all audio elements
     const songs = [
         document.getElementById("song"),
         document.getElementById("song2"),
@@ -11,19 +10,18 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("song8"),
     ];
 
-    // Array to store all progress elements
     const progresses = [
         document.getElementById("progress"),
-        document.getElementById("progress 2"), // Remove the space in "progress 2"
-        document.getElementById("progress 3"), // Remove the space in "progress 3"
-        document.getElementById("progress 4"), // Remove the space in "progress 4"
-        document.getElementById("progress 5"), // Remove the space in "progress 5"
-        document.getElementById("progress 6"), // Remove the space in "progress 6"
-        document.getElementById("progress 7"), // Remove the space in "progress 7"
-        document.getElementById("progress 8"), // Remove the space in "progress 8"
+        document.getElementById("progress 2"),
+        document.getElementById("progress 3"),
+        document.getElementById("progress 4"),
+        document.getElementById("progress 5"),
+        document.getElementById("progress 6"),
+        document.getElementById("progress 7"),
+        document.getElementById("progress 8"),
     ];
 
-    // Array to store all control elements
+
     const controls = [
         document.getElementById("ctrl"),
         document.getElementById("ctrl2"),
@@ -35,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("ctrl8"),
     ];
 
-    // Function to play/pause a specific song
+
     window.playPause = function(songIndex) {
         var song = songs[songIndex - 1];
         var control = controls[songIndex - 1];
@@ -61,14 +59,13 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     };
 
-    // Update progress bar for a specific song
     function updateProgress(songIndex) {
         const song = songs[songIndex];
         const progress = progresses[songIndex];
         progress.value = song.currentTime;
     }
 
-    // Attach event listeners to progress bars to update song progress
+
     for (let i = 0; i < progresses.length; i++) {
         progresses[i].addEventListener("input", function() {
             const song = songs[i];
@@ -76,7 +73,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Update progress bars continuously
     setInterval(() => {
         for (let i = 0; i < songs.length; i++) {
             updateProgress(i);
