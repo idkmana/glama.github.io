@@ -1006,11 +1006,11 @@ font-size: 0;
 }
 .centered2 {
   position: absolute;
-  top: 33%;
-  left: 10%;
-  font-size: 6vw;
+  top: 0;
+  left: 0;
+  font-size: 0;
   font-family: 'Archivo Black Regular';
-  letter-spacing: 8px;
+  letter-spacing: 0;
 }
 .centered3 {
   position: absolute;
