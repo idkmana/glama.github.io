@@ -215,6 +215,11 @@ nav ul a:hover
     color: #221F2E;
     background-color: #ffffff;
   }
+  .social button:focus{
+    transition: 0.25s;
+    color: white;
+    background-color: #221F2E;
+  }
 
   div.centered3 button{
     font-size: 2vw;
@@ -535,25 +540,23 @@ a{
       position: absolute;
       top: 82.5%;
       left: 11%;
-      width: 13%;
+      width: 20%;
     }
     .social button{
-      scale: 140%;
-      color: white;
-      margin-right: 5%;
+      scale: 300%;
+      color: #221F2E;
+      margin-right: 50px;
       width: 3vw;
       height: 3vw;
       border-radius: 50%;
       padding-top:.5px;
-      background-color: #221F2E;
+      background-color: #ffffff00;
       cursor: pointer;
-      transition: 0.25s;
       border: none;
     }
     .social button:hover{
-      transition: 0.25s;
       color: #221F2E;
-      background-color: #ffffff;
+      background-color: #ffffff00;
     }
     .container2{
       position: static;
@@ -566,7 +569,18 @@ a{
       flex-wrap: wrap;
       outline: 3px #221F2E solid;
   }
-      section
+  div.centered3 button{
+    font-size: 0;
+    color: #221F2E;
+    border: 0px solid white;
+    background-color: transparent;
+    padding-left: 0vw;
+    padding-right: 0vw;
+    font-family: 'Archivo Black Regular';
+    cursor: pointer;
+    transition: 0.25s;
+  }
+    section
   {
     margin: 0 auto;
     margin-bottom: 30px;
@@ -734,32 +748,7 @@ header .logo
     font-family: 'Kollektif Regular';
 }
 }
-@media (max-width: 675px){
-  .social{
-    position: absolute;
-    top: 82.5%;
-    left: 11%;
-    width: 15%;
-  }
-  .social button{
-    scale: 1;
-    color: white;
-    margin-right: 7%;
-    width: 4vw;
-    height: 4vw;
-    border-radius: 50%;
-    padding-top:.5px;
-    background-color: #221F2E;
-    cursor: pointer;
-    transition: 0.25s;
-    border: none;
-  }
-  .social button:hover{
-    transition: 0.25s;
-    color: #221F2E;
-    background-color: #ffffff;
-  }
-}
+
 @media (max-width: 540px)
   {
     section h1{
@@ -1062,12 +1051,6 @@ div.centered3 button{
   font-family: 'Archivo Black Regular';
   cursor: pointer;
   transition: 0.25s;
-}
-div.centered3 button:hover{
-  transition: 0.25s;
-  color: #ffffff;
-  background-color: #221F2E;
-  border-radius: 0.8vw;
 }
 .container2{
   position: absolute;
