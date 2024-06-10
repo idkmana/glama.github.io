@@ -21,8 +21,7 @@
 <header>
 <a href="index.html" class="logo">GLAMATON</a>
     
-    <div class="toggle"></div>
-        
+    <div class="toggle"></div>   
     <nav>
         <ul>
 
@@ -108,45 +107,7 @@ document.querySelector('.toggle').onclick = function(){
                         </div>
                     </div>
                 </div>
-             </div>
-            
-             <script>
-            let progress = document.getElementById("progress");
-            let song = document.getElementById("song");
-            let ctrl = document.getElementById("ctrl");
-
-            song.onloadedmetadata = function(){
-                progress.max = song.duration;
-                progress.value = song.currentTime;
-            }
-
-            function playPause(){
-                if(ctrl.classList.contains("fa-pause")){
-                    song.pause();
-                    ctrl.classList.remove("fa-pause");
-                    ctrl.classList.add("fa-play");
-                }
-                else{
-                    song.play();
-                    ctrl.classList.add("fa-pause");
-                    ctrl.classList.remove("fa-play");
-                }
-            }
-
-            if(song.play()){
-                setInterval(() => {
-                    progress.value = song.currentTime
-                }, 500);
-            }
-
-            progress.onchange = function(){
-                song.play();
-                song.currentTime = progress.value;
-                ctrl.classList.add("fa-pause");
-            ctrl.classList.remove("fa-play");
-            }
-             </script>
-             
+             </div>     
       <section2>
       <h2>LATEST NEWS</h2>
       <hr>
@@ -196,6 +157,42 @@ document.querySelector('.toggle').onclick = function(){
       </section2>
       <a href="#id2"><button class="uptop"><i class="fa-solid fa-chevron-up fa-2xl"></i>
       </button></a>
+      <script>
+        let progress = document.getElementById("progress");
+        let song = document.getElementById("song");
+        let ctrl = document.getElementById("ctrl");
+
+        song.onloadedmetadata = function(){
+            progress.max = song.duration;
+            progress.value = song.currentTime;
+        }
+
+        function playPause(){
+            if(ctrl.classList.contains("fa-pause")){
+                song.pause();
+                ctrl.classList.remove("fa-pause");
+                ctrl.classList.add("fa-play");
+            }
+            else{
+                song.play();
+                ctrl.classList.add("fa-pause");
+                ctrl.classList.remove("fa-play");
+            }
+        }
+
+        if(song.play()){
+            setInterval(() => {
+                progress.value = song.currentTime
+            }, 500);
+        }
+
+        progress.onchange = function(){
+            song.play();
+            song.currentTime = progress.value;
+            ctrl.classList.add("fa-pause");
+        ctrl.classList.remove("fa-play");
+        }
+         </script>
       </body>
 
       <footer>
