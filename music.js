@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("ctrl8"),
     ];
 
-
     window.playPause = function(songIndex) {
         var song = songs[songIndex - 1];
         var control = controls[songIndex - 1];
@@ -62,7 +61,18 @@ document.addEventListener("DOMContentLoaded", function() {
     function updateProgress(songIndex) {
         const song = songs[songIndex];
         const progress = progresses[songIndex];
+        const control = controls[songIndex];
+
         progress.value = song.currentTime;
+        progress.max = song.duration;
+
+        if(song.currentTime == progress.max)
+            {
+                progress.value = 0;
+                song.currentTime = progress.value;
+                control.classList.add("fa-play");
+                control.classList.remove("fa-pause");
+            }
     }
 
 
