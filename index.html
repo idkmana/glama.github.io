@@ -92,7 +92,22 @@ document.querySelector('.toggle').onclick = function(){
       </section>
       <section3 >
         </section3>
- 
+ <div class="container2" id="id1">
+      <div class="music">
+    <img src="woman plan.jpg" class="song" >
+    <h2 >Woman Plan</h2>
+    <p2>Glamaton</p2>
+    <audio id="song">
+         <source src="Woma.mp3" type="audio/mpeg">
+     </audio>
+        <input type="range" value="0" id="progress">
+         <div class="controls">
+                        <div onclick="playPause()">
+                            <i class="fa-solid fa-play" id="ctrl"></i>
+                        </div>
+                    </div>
+                </div>
+             </div>
             
              <script>
             let progress = document.getElementById("progress");
